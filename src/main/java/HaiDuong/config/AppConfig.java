@@ -49,7 +49,7 @@ public class AppConfig {
                         "http://localhost:4200/",
                         "http://localhost:3000/",
                         "http://localhost:5173/",
-                        "http://clever-compassion-production.up.railway.app"
+                        "https://quiet-bavarois-79fda8.netlify.app/"
                 ));
                 cfg.setAllowedMethods(Collections.singletonList("*"));//all method like post get ...
                 cfg.setAllowCredentials(true);
