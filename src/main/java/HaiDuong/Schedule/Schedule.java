@@ -7,13 +7,15 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
 @Component
 public class Schedule {
 
 
-    @Scheduled(initialDelay = 5000, fixedDelay = 840000)
+    @Scheduled(initialDelay = 5000, fixedDelay = 60000)
     public void schedule() {
 
         String urlString = "https://managementsystem-byje.onrender.com"; // Replace with your URL
@@ -36,7 +38,13 @@ public class Schedule {
 
         LocalDateTime now = LocalDateTime.now();
 
-        DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-        System.out.println("EVNICT "+now.format(formatter1));
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+
+        // Get the current time in Vietnam timezone
+        ZonedDateTime vietnamTime = ZonedDateTime.now(ZoneId.of("Asia/Ho_Chi_Minh"));
+
+        // Format the time
+        String formattedVietnamTime = vietnamTime.format(formatter);
+        System.out.println("EVNICT "+formattedVietnamTime);
     }
 }
