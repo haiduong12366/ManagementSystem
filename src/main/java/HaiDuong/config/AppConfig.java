@@ -47,8 +47,6 @@ public class AppConfig {
                 CorsConfiguration cfg =  new CorsConfiguration();
                 cfg.setAllowedOrigins(Arrays.asList(
                         "https://haiduong12366.github.io/",
-                        "https://haiduong12366.github.io/ManagementSystemFrontend/ManagementSystemFrontend",
-                        "https://haiduong12366.github.io/ManagementSystemFrontend/",
                         "https://main--haiduong.netlify.app/",
                         "http://localhost:5173/",
                         "http://localhost:4200/",
