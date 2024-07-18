@@ -46,11 +46,9 @@ public class AppConfig {
             public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
                 CorsConfiguration cfg =  new CorsConfiguration();
                 cfg.setAllowedOrigins(Arrays.asList(
-                        "http://localhost:4200/",
-                        "http://localhost:3000/",
+                        "https://main--haiduong.netlify.app/",
                         "http://localhost:5173/",
-                        "https://quiet-bavarois-79fda8.netlify.app/"
-                ));
+                        "http://localhost:4200/"));
                 cfg.setAllowedMethods(Collections.singletonList("*"));//all method like post get ...
                 cfg.setAllowCredentials(true);
                 cfg.setAllowedHeaders(Collections.singletonList("*"));
