@@ -15,7 +15,7 @@ import java.time.format.DateTimeFormatter;
 public class Schedule {
 
 
-    @Scheduled(initialDelay = 5000, fixedDelay = 60000)
+    @Scheduled(initialDelay = 5000, fixedDelay = 720000)
     public void schedule() {
 
         String urlString = "https://managementsystem-byje.onrender.com"; // Replace with your URL
