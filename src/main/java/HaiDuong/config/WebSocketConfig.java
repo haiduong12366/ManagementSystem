@@ -26,6 +26,8 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/ws").setAllowedOrigins(
                 "https://haiduong12366.github.io/ManagementSystemFrontend/",
+                "https://haiduong12366.github.io/",
+                "https://haiduong12366.github.io/ManagementSystemFrontend/ManagementSystemFrontend",
                 "https://main--haiduong.netlify.app/",
                 "http://localhost:5173/",
                 "http://localhost:4200/",
