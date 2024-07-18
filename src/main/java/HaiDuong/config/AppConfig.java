@@ -46,11 +46,12 @@ public class AppConfig {
             public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
                 CorsConfiguration cfg =  new CorsConfiguration();
                 cfg.setAllowedOrigins(Arrays.asList(
+                        "https://haiduong12366.github.io/ManagementSystemFrontend/",
                         "https://main--haiduong.netlify.app/",
                         "http://localhost:5173/",
                         "http://localhost:4200/",
-                        "http://localhost:4173/",
-                        "https://haiduong12366.github.io/ManagementSystemFrontend/"));
+                        "http://localhost:4173/"
+                        ));
                 cfg.setAllowedMethods(Collections.singletonList("*"));//all method like post get ...
                 cfg.setAllowCredentials(true);
                 cfg.setAllowedHeaders(Collections.singletonList("*"));
