@@ -27,7 +27,9 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
         registry.addEndpoint("/ws").setAllowedOrigins(
                 "https://main--haiduong.netlify.app/",
                 "http://localhost:5173/",
-                "http://localhost:4200/").withSockJS();
+                "http://localhost:4200/",
+                "http://localhost:4173/",
+                "https://haiduong12366.github.io/ManagementSystemFrontend/").withSockJS();
     }
 
     @Override
